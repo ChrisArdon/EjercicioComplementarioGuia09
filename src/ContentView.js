@@ -5,8 +5,17 @@ import { codigoHtml } from './Html';
 
 export default function ContentView(){
     return(
-        <View>
+        <View style={styles.container}>
             <WebView source={{html:codigoHtml}}></WebView>
         </View>
     );
 }
+
+const styles = StyleSheet.create({
+    container: {
+        flex:1,
+    },
+    web:{
+        fontSize:20,
+    },
+})
